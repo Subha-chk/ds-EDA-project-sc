@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5bf3347df9e75cf154ceb7d7d21e373e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5bf3347df9e75cf154ceb7d7d21e373e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5bf3347df9e75cf154ceb7d7d21e373e = L.map(
+                "map_5bf3347df9e75cf154ceb7d7d21e373e",
+                {
+                    center: [47.38106666666666, -122.31966666666666],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2030001c195595689fda5dc931a04f75 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2030001c195595689fda5dc931a04f75.addTo(map_5bf3347df9e75cf154ceb7d7d21e373e);
+        
+    
+            map_5bf3347df9e75cf154ceb7d7d21e373e.fitBounds(
+                [[47.3785, -122.32], [47.3825, -122.319]],
+                {}
+            );
+        
+    
+            var marker_cluster_f98a941b0631db886844943b0bb28bd3 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_6bcf07cf21332e05c7b34d7c162172e1 = L.marker(
+                [47.3825, -122.319],
+                {
+}
+            ).addTo(marker_cluster_f98a941b0631db886844943b0bb28bd3);
+        
+    
+            var icon_89fc15f7f118fd8e9043058ba1038f7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d77b17c9ec45518e8ec1a151a01dfe45 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_52bf5f58f20b617ab5a53d86d4dd3684 = $(`<div id="html_52bf5f58f20b617ab5a53d86d4dd3684" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px;">         <h4>🏠 House Details</h4>         <hr>         <b>Price:</b> $210,000<br>         <b>Bedrooms:</b> 2.0<br>         <b>Bathrooms:</b> 1.75<br>         <b>Living Area:</b> 1440.0 sqft<br>         <b>Grade:</b> Very Good (9)<br>         <b>Price Category:</b> Budget (<$250K)<br>         <b>Year Built:</b> 1978<br>         <b>Renovated:</b> No     </div>     </div>`)[0];
+                popup_d77b17c9ec45518e8ec1a151a01dfe45.setContent(html_52bf5f58f20b617ab5a53d86d4dd3684);
+            
+        
+
+        marker_6bcf07cf21332e05c7b34d7c162172e1.bindPopup(popup_d77b17c9ec45518e8ec1a151a01dfe45)
+        ;
+
+        
+    
+    
+            marker_6bcf07cf21332e05c7b34d7c162172e1.bindTooltip(
+                `<div>
+                     $210,000 | 2.0 bed | Grade: Very Good (9)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6bcf07cf21332e05c7b34d7c162172e1.setIcon(icon_89fc15f7f118fd8e9043058ba1038f7f);
+            
+    
+            var marker_692bfdab58b4a8221a2ee40da0745335 = L.marker(
+                [47.3785, -122.32],
+                {
+}
+            ).addTo(marker_cluster_f98a941b0631db886844943b0bb28bd3);
+        
+    
+            var icon_00c96acaf0714460d3d552dec6a19f3d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_590d583a0e2f8f80b2fb9d81fb3f30d3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3663e29a45856ddc01899b065d5eb9cc = $(`<div id="html_3663e29a45856ddc01899b065d5eb9cc" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px;">         <h4>🏠 House Details</h4>         <hr>         <b>Price:</b> $216,500<br>         <b>Bedrooms:</b> 2.0<br>         <b>Bathrooms:</b> 1.75<br>         <b>Living Area:</b> 1390.0 sqft<br>         <b>Grade:</b> Very Good (9)<br>         <b>Price Category:</b> Budget (<$250K)<br>         <b>Year Built:</b> 1980<br>         <b>Renovated:</b> No     </div>     </div>`)[0];
+                popup_590d583a0e2f8f80b2fb9d81fb3f30d3.setContent(html_3663e29a45856ddc01899b065d5eb9cc);
+            
+        
+
+        marker_692bfdab58b4a8221a2ee40da0745335.bindPopup(popup_590d583a0e2f8f80b2fb9d81fb3f30d3)
+        ;
+
+        
+    
+    
+            marker_692bfdab58b4a8221a2ee40da0745335.bindTooltip(
+                `<div>
+                     $216,500 | 2.0 bed | Grade: Very Good (9)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_692bfdab58b4a8221a2ee40da0745335.setIcon(icon_00c96acaf0714460d3d552dec6a19f3d);
+            
+    
+            var marker_828ef3e9df403143294a1da27c3fd464 = L.marker(
+                [47.3822, -122.32],
+                {
+}
+            ).addTo(marker_cluster_f98a941b0631db886844943b0bb28bd3);
+        
+    
+            var icon_be7baa61fac5c0c65fc61b442c4cc1ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd5374aa67f82ac8b4bb115c9b0ad56d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_069ef1be24f4545d986a69df231771ad = $(`<div id="html_069ef1be24f4545d986a69df231771ad" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px;">         <h4>🏠 House Details</h4>         <hr>         <b>Price:</b> $202,200<br>         <b>Bedrooms:</b> 2.0<br>         <b>Bathrooms:</b> 1.75<br>         <b>Living Area:</b> 1330.0 sqft<br>         <b>Grade:</b> Very Good (9)<br>         <b>Price Category:</b> Budget (<$250K)<br>         <b>Year Built:</b> 1979<br>         <b>Renovated:</b> No     </div>     </div>`)[0];
+                popup_bd5374aa67f82ac8b4bb115c9b0ad56d.setContent(html_069ef1be24f4545d986a69df231771ad);
+            
+        
+
+        marker_828ef3e9df403143294a1da27c3fd464.bindPopup(popup_bd5374aa67f82ac8b4bb115c9b0ad56d)
+        ;
+
+        
+    
+    
+            marker_828ef3e9df403143294a1da27c3fd464.bindTooltip(
+                `<div>
+                     $202,200 | 2.0 bed | Grade: Very Good (9)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_828ef3e9df403143294a1da27c3fd464.setIcon(icon_be7baa61fac5c0c65fc61b442c4cc1ad);
+            
+    
+            marker_cluster_f98a941b0631db886844943b0bb28bd3.addTo(map_5bf3347df9e75cf154ceb7d7d21e373e);
+        
+    
+            tile_layer_2030001c195595689fda5dc931a04f75.addTo(map_5bf3347df9e75cf154ceb7d7d21e373e);
+        
+    
+                marker_6bcf07cf21332e05c7b34d7c162172e1.setIcon(icon_89fc15f7f118fd8e9043058ba1038f7f);
+            
+    
+                marker_692bfdab58b4a8221a2ee40da0745335.setIcon(icon_00c96acaf0714460d3d552dec6a19f3d);
+            
+    
+                marker_828ef3e9df403143294a1da27c3fd464.setIcon(icon_be7baa61fac5c0c65fc61b442c4cc1ad);
+            
+    
+            marker_cluster_f98a941b0631db886844943b0bb28bd3.addTo(map_5bf3347df9e75cf154ceb7d7d21e373e);
+        
+    
+            var marker_841653d69b8be7d67303c03bcb7e0e06 = L.marker(
+                [47.2909, -122.219],
+                {
+}
+            ).addTo(map_5bf3347df9e75cf154ceb7d7d21e373e);
+        
+    
+            var icon_f5f6675a365f1c7902cc24dc0e687f7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "globe",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b27ff1a54bb39c329a4a9046df1c8f61 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_af4d402a5347ee60cb64c9d5eaf188ae = $(`<div id="html_af4d402a5347ee60cb64c9d5eaf188ae" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Outside Seattle<br>     <b>Price:</b> $330,000<br>     <b>Zipcode:</b> 98002<br>     <b>Bedrooms:</b> 2<br>     <b>Bathrooms:</b> 1.5<br>     <b>Size:</b> 1440 sqft     </div>`)[0];
+                popup_b27ff1a54bb39c329a4a9046df1c8f61.setContent(html_af4d402a5347ee60cb64c9d5eaf188ae);
+            
+        
+
+        marker_841653d69b8be7d67303c03bcb7e0e06.bindPopup(popup_b27ff1a54bb39c329a4a9046df1c8f61)
+        ;
+
+        
+    
+    
+            marker_841653d69b8be7d67303c03bcb7e0e06.bindTooltip(
+                `<div>
+                     $330,000 - Outside Seattle
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_841653d69b8be7d67303c03bcb7e0e06.setIcon(icon_f5f6675a365f1c7902cc24dc0e687f7e);
+            
+    
+            var marker_bba81d894109599b75e1fe9db387604b = L.marker(
+                [47.5476, -122.005],
+                {
+}
+            ).addTo(map_5bf3347df9e75cf154ceb7d7d21e373e);
+        
+    
+            var icon_5e8720f72294e41d3f12224fa5cca497 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "globe",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b3768e354473b1f298ad8d5ee647645 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_baeb7b78acea0729026f3c1805593c7c = $(`<div id="html_baeb7b78acea0729026f3c1805593c7c" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Outside Seattle<br>     <b>Price:</b> $376,000<br>     <b>Zipcode:</b> 98029<br>     <b>Bedrooms:</b> 2<br>     <b>Bathrooms:</b> 2.0<br>     <b>Size:</b> 1340 sqft     </div>`)[0];
+                popup_0b3768e354473b1f298ad8d5ee647645.setContent(html_baeb7b78acea0729026f3c1805593c7c);
+            
+        
+
+        marker_bba81d894109599b75e1fe9db387604b.bindPopup(popup_0b3768e354473b1f298ad8d5ee647645)
+        ;
+
+        
+    
+    
+            marker_bba81d894109599b75e1fe9db387604b.bindTooltip(
+                `<div>
+                     $376,000 - Outside Seattle
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bba81d894109599b75e1fe9db387604b.setIcon(icon_5e8720f72294e41d3f12224fa5cca497);
+            
+    
+            var marker_e4d3df737d1f315466a3c93aac3a72e8 = L.marker(
+                [47.4911, -122.154],
+                {
+}
+            ).addTo(map_5bf3347df9e75cf154ceb7d7d21e373e);
+        
+    
+            var icon_98b192148e95ba3d661fd6ae53ccc0a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "globe",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0d41e84c1297a5ff7f94d00388f0c2d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_18fd590a0e8bc24eb509e384e32e0b99 = $(`<div id="html_18fd590a0e8bc24eb509e384e32e0b99" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> Outside Seattle<br>     <b>Price:</b> $330,000<br>     <b>Zipcode:</b> 98059<br>     <b>Bedrooms:</b> 2<br>     <b>Bathrooms:</b> 2.5<br>     <b>Size:</b> 1310 sqft     </div>`)[0];
+                popup_e0d41e84c1297a5ff7f94d00388f0c2d.setContent(html_18fd590a0e8bc24eb509e384e32e0b99);
+            
+        
+
+        marker_e4d3df737d1f315466a3c93aac3a72e8.bindPopup(popup_e0d41e84c1297a5ff7f94d00388f0c2d)
+        ;
+
+        
+    
+    
+            marker_e4d3df737d1f315466a3c93aac3a72e8.bindTooltip(
+                `<div>
+                     $330,000 - Outside Seattle
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e4d3df737d1f315466a3c93aac3a72e8.setIcon(icon_98b192148e95ba3d661fd6ae53ccc0a9);
+            
+</script>
+</html>
